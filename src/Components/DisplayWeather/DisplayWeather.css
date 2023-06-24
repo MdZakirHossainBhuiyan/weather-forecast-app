@@ -15,6 +15,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .displayCard{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+
 .displayCard h5{
     margin-top: 10px;
     text-align: center;
@@ -33,20 +42,41 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .currentWeather{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .currentTem p{
     font-size: 35px;
     font-weight: bold;
     color: gold;
 }
 
+@media (max-width: 768px) {
+    .currentTem p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
 .forecastWeather{
     color: #fff;
     width: 100%;
-    margin: 20px 20px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .forecastWeather{
+        margin: 20px 0px;
+    }
 }
 
 .currentWeatherIcon{

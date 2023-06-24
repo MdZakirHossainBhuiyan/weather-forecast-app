@@ -32,7 +32,7 @@ const DisplayWeather = ({weatherInfo}) => {
             </div>
             <div className='forecastWeather'>
                 {
-                    data.slice(0, 6).map((forecastData) => <ForecastUpdate forecastData={forecastData} />)
+                    data.slice(0, 6).map((forecastData) => <ForecastUpdate key={forecastData?.datetime} forecastData={forecastData} />)
                 }
             </div>
         </div>
