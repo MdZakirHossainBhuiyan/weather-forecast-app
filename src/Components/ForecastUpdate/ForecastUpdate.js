@@ -7,7 +7,7 @@ const ForecastUpdate = ({forecastData}) => {
     return (
         <div className='forecastBody'>
             <img src={`https://openweathermap.org/img/wn/${iconCode}.png`} />
-            <p>{forecastData?.app_min_temp}&deg;C</p>
+            <p>{Math.trunc(forecastData?.app_min_temp)}&deg;C</p>
         </div>
     );
 };

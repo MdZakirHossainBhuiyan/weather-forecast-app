@@ -1,12 +1,8 @@
 import React from 'react';
-// import LoadingButton from '@mui/lab/LoadingButton';
+import './Loader.css';
 
 const Loader = () => {
-    return (
-        <div>
-            {/* <LoadingButton /> */}
-        </div>
-    );
+    return <span class="loader"></span>
 };
 
 export default Loader;

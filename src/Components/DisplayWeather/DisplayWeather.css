@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat:wght@200&display=swap');
+
 .displayCard{
     width: 50%;
     height: auto;
@@ -10,7 +12,7 @@
     background-color: rgb(9, 170, 245);
     border-radius: 10px;
     margin-left: 100px;
-    font-family: 'Times New Roman';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .displayCard h5{
@@ -32,9 +34,9 @@
 }
 
 .currentTem p{
-    font-size: 30px;
-    font-family: 'Times New Roman';
+    font-size: 35px;
     font-weight: bold;
+    color: gold;
 }
 
 .forecastWeather{
@@ -45,5 +47,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.currentWeatherIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0px;
+}
+
+.currentWeatherIcon img{
+    width: 100px;
+    height: 100px;
+}
+
+.additionalInfo{
+    line-height: 25px;
 }
 

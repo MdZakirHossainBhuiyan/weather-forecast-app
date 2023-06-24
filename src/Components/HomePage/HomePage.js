@@ -6,8 +6,6 @@ import axios from 'axios';
 import Loader from '../Loader/Loader';
 import DisplayWeather from '../DisplayWeather/DisplayWeather';
 
-// 
-
 const HomePage = () => {
     const [userLocation, setUserLocation] = useState(null);
     const [weatherInfo, setWeatherInfo] = useState(null);
@@ -39,8 +37,6 @@ const HomePage = () => {
         }
     }
 
-    console.log("weather Info", weatherInfo);
-
     return (
         <div className='homePageArea'>
             <div className='topArea'>
@@ -56,6 +52,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className='displayArea'>
+                <Loader />
                 {weatherInfo != null && <DisplayWeather weatherInfo={weatherInfo} />}
             </div>
         </div>

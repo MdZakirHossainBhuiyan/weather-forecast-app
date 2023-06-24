@@ -13,19 +13,18 @@ const DisplayWeather = ({weatherInfo}) => {
         <div className='displayCard'>
             <h5>{city_name}, {country_code}</h5>
             <div className='currentWeather'>
-                <div>
+                <div className='currentWeatherIcon'>
                     <img src={`https://openweathermap.org/img/wn/02d.png`} />
-                    
-                    <p><i className={`wi wi-owm-${iconCode}`}></i>{weather?.description}</p>
+                    <p>{weather?.description}</p>
                 </div>
                 <div className='currentTem'>
-                    <p>{app_min_temp}&deg;C</p>
+                    <p>{Math.trunc(app_min_temp)}&deg;C</p>
                 </div>
-                <div>
+                <div className='additionalInfo'>
                     Date: {datetime} <br />
                     Time Zone: {timezone} <br />
-                    High Temp: {high_temp}&deg;C <br/>
-                    Low Temp: {low_temp}&deg;C <br/>
+                    High Temp: {Math.trunc(high_temp)}&deg;C <br/>
+                    Low Temp: {Math.trunc(low_temp)}&deg;C <br/>
                     Clouds: {clouds}% <br/>
                 </div>
             </div>
