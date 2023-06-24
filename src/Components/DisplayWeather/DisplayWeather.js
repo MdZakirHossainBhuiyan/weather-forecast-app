@@ -14,6 +14,8 @@ const DisplayWeather = ({weatherInfo}) => {
     return (
         <div className='displayCard'>
             <h5>{city_name}, {country_code}</h5>
+
+            {/* display today's data */}
             <div className='currentWeather'>
                 <div className='currentWeatherIcon'>
                     <img src={`https://openweathermap.org/img/wn/${iconCode}.png`} />
@@ -30,6 +32,8 @@ const DisplayWeather = ({weatherInfo}) => {
                     Clouds: {clouds}% <br/>
                 </div>
             </div>
+
+            {/* forecast weather data */}
             <div className='forecastWeather'>
                 {
                     data.slice(0, 6).map((forecastData) => <ForecastUpdate key={forecastData?.datetime} forecastData={forecastData} />)

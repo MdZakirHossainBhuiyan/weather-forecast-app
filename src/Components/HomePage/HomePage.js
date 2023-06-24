@@ -11,15 +11,15 @@ const HomePage = () => {
     const [weatherInfo, setWeatherInfo] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    let id = 0;
-
     const API_KEY = "e48522bcd06f4619a0ba10521936c62a";
     const API_URL = `https://api.weatherbit.io/v2.0/forecast/daily?city=${userLocation},BD&key=${API_KEY}`;
 
+    // store user input location
     const handleChange = (e) => {
         setUserLocation(e.target.value);
     }
 
+    //api call
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -39,6 +39,7 @@ const HomePage = () => {
         }
     }
 
+    // displaying content
     let content = null;
     if(loading) content = <Loader />;
     if(!loading && weatherInfo?.length === 0) content = <div className='errorText'>"No Related Data Found!"</div>;
