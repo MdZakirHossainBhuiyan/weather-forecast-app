@@ -90,3 +90,9 @@
     justify-content: center;
 }
 
+.errorText{
+    margin-top: 50px;
+    font-size: 25px;
+    color: red;
+}
+

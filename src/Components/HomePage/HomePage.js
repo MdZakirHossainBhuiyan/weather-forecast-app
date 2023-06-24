@@ -37,6 +37,12 @@ const HomePage = () => {
         }
     }
 
+    let content = null;
+    if(loading) content = <Loader />;
+    if(!loading && weatherInfo?.length === 0) content = <div className='errorText'>"No Related Data Found!"</div>;
+    if(!loading && weatherInfo?.length != 0) content = <DisplayWeather weatherInfo={weatherInfo} />
+
+
     return (
         <div className='homePageArea'>
             <div className='topArea'>
@@ -52,8 +58,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className='displayArea'>
-                <Loader />
-                {weatherInfo != null && <DisplayWeather weatherInfo={weatherInfo} />}
+                {content}
             </div>
         </div>
     );

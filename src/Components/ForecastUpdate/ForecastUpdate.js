@@ -2,7 +2,7 @@ import React from 'react';
 import './ForecastUpdate.css';
 
 const ForecastUpdate = ({forecastData}) => {
-    const iconCode = forecastData?.weather?.icon.substring(1)
+    const iconCode = forecastData?.weather?.icon.substring(1);
 
     return (
         <div className='forecastBody'>
