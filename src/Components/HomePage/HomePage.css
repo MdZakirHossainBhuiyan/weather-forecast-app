@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.homePageArea{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.topArea{
+    width: 100%;
+    height: 150px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+}
+
+.topLeft{
+    width: 25%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.topLeft img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.topRight{
+    width: 75%;
+    height: 150px;
+}
+
+.topRight h3{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    color: #fff;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.topRight form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topRight form>input{
+    margin-left: 80px;
+    margin-top: 25px;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    outline: none;
+}
+
+.topRight form>button{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+.topRight form>button:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+.displayArea{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
